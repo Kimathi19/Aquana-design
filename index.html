@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
-  <body>
-    <nav class="nav flex justify-between items-center px-8 lg:px-24 py-2">
+  <body class="text-sm">
+    <!-- nav bar -->
+    <nav class="nav flex justify-between items-center px-8 lg:px-24 py-2 text-sm">
       <div class="logo flex items-center">
         <img class="w-14" src="logo/pngegg-logo.png" alt="Aquana-logo" />
         <span class="logo-name text-blue-700">Aquana</span>
@@ -69,7 +70,7 @@
           <h1 class="text-4xl font-semibold text-blue-700 mb-10">
             Refreshment delivered right to your doorstep
           </h1>
-          <p class="mb-10 lg:w-[90%]">
+          <p class="mb-10 lg:w-[90%] text-sm">
             We are your source for the purest and most
             <span class="text-orange-400 font-semibold"
               >tailored water options</span
@@ -150,12 +151,12 @@
       </div>
 
       <div class="right-side lg:w-[40%] mt-10" data-aos="fade-left" data-aos-duration="1000">
-        <p class="text-blue-700 font-bold">Why Choose Us</p>
+        <p class="text-blue-700 font-semibold uppercase tracking-wider">Why Choose Us</p>
         <p class="text-xl my-4 font-semibold">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
           veritatis?
         </p>
-        <p class="text-sm">
+        <p class="text-sm text-neutral-500">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
           accusamus, at inventore sapiente earum atque sunt tempora cum nam
           expedita minus eligendi iusto pariatur iste dolore, fugit ab
@@ -169,6 +170,123 @@
           Contact Us Today
         </button>
       </div>
+    </div>
+
+    <!--What we offer-->
+    <div class="px-24 lg:mb-40">
+      <div class="top w-[50%] mb-14">
+        <p class="text-blue-700 font-semibold mb-1 uppercase text-[12px] tracking-wider">What we offer</p>
+        <p class="text-3xl font-bold mb-2">Our Best Services</p>
+        <p class="text-sm ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur accusantium, voluptatibus doloribus repudiandae suscipit corrupti. A vel cumque porro nesciunt?</p>
+      </div>
+      <div class="bottom flex flex-row justify-between gap-16 ">
+
+        <!-- first card-->
+        <div class="w-[450px]" >
+        <img  src="logo/online-delivery-service-conceptp.png" alt="Online water delivery" class="h-[200px] w-full rounded-md">
+        <h3 class="text-orange-400 font-semibold text-xl mb-2">Fast Delivery</h3>
+        <p class="text-sm ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, nulla.</p>
+        <p class="text-sm text-neutral-400 mt-3 ">LEARN MORE</p>
+        </div>
+
+      <!-- second card -->
+        <div class="w-[450px]">
+          <img src="logo/water-bottle-water-drink-liquid.png" alt="bottled water" class="h-[200px] object-contain w-full border-2 rounded-md border-orange-400 ">
+          <h3 class="text-orange-400 font-semibold text-xl mb-2">Custom Products</h3>
+          <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, hic!</p>
+          <p class="text-sm text-gray-500 mt-3">LEARN MORE</p>
+        </div>
+
+        
+        <!-- third card -->
+        <div class="w-[450px]">
+          <img src="logo/close-up-view-hands-protective-g.png" alt="purified water" class="h-[200px] object-cover rounded-md w-full">
+          <h3 class="text-orange-400 font-semibold text-xl mb-2">Water Purification</h3>
+          <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, suscipit?</p>
+          <p class="text-sm text-gray-500 mt-3">LEARN MORE</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Enjoy the convenience -->
+    <div class="px-24 mb-40">
+      <div class="convenience flex flex-col justify-center items-center mb-8 ">
+        <h2 class="font-semibold text-2xl text-blue-700 mb-2">ENJOY THE CONVENIENCE OF THE AQUANA APP</h2>
+        <h5 class="font-semibold text-xl">How does it work ?</h5>
+      </div>
+      <div class="delivery flex justify-evenly gap-7 mb-8">
+        <!-- place order -->
+        <div>
+         <img class="border border-gray-300 h-[200px] rounded-md" src="logo/tiny-woman-ordering-parcel-onlin.png" alt="place-your-aquana-water-delivery-order">
+         <p class="text-blue-700 font-semibold text-xl">1. Place Your Order</p>
+        </div>
+
+        <!-- track your order -->
+        <div>
+          <img class="border border-gray-300 h-[200px] object-cover rounded-md" src="logo/track order.png" alt="track-aquana-water-delvery" >
+          <p class="text-blue-700 font-semibold text-xl">2. Easily Track Your order</p>
+        </div>
+
+        <!-- order delivery -->
+        <div>
+          <img class="border border-gray-300 h-[200px] object-contain rounded-md w-[285px]" src="logo/courier-delivered-boxes-business.png" alt="get-aquana-water-delivered">
+          <p class="text-blue-700 font-semibold text-xl">3. Get It Delivered</p>
+        </div>
+      </div>
+      <div class="buttons flex justify-evenly">
+        <button class="bg-orange-400 px-6 py-3 text-white " type="button">DOWNLOAD FOR ANDROID</button>
+        <button class="bg-orange-400 text-white px-10 py-3  " type="button">DOWNLOAD FOR IOS</button>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="px-24 mb-40">
+      <div class="heading flex justify-center items-center flex-col mb-8 ">
+        <p class="text-blue-700 font-semibold uppercase tracking-wider">Testimonials</p>
+        <p class="text-2xl font-bold mb-4">What our Clients Say</p>
+        <p class="w-[50%] text-center text-neutral-500">There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form.</p>
+      </div>
+      <div class="testimonials flex flex-row gap-4">
+        <!-- 1st card -->
+        <div class=" w-[450px] shadow-xl bg-card p-3">
+          <p class="text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p class="my-3 mb-6 text-sm">" Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community"</p>
+          <div class="flex gap-2 items-center">
+            <div>
+              <img class="w-12 h-12 object-cover rounded-full" src="logo/WhatsApp Image 2024-02-22 at 6.04.43 PM.jpeg" alt="">
+            </div>
+            <div>
+              <p class="text-xs font-bold">Ezra Mwangi</p>
+              <p class="text-xs text-neutral-500">Founder @ Ole sereni</p>
+            </div>
+          </div>
+        </div>
+        <!-- 2nd card -->
+        <div class="border w-[550px]">
+          <p class="text-orange-400">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p>" Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community"</p>
+          <div>
+            <img class="w-20" src="logo/_MG_0043.JPG" alt="">
+          </div>
+          <div>
+            <p>Wesley Agan</p>
+            <p>CEO @ Chicken Inn</p>
+          </div>
+        </div>
+        <!-- 3rd card -->
+        <div class="border w-[550px]">
+          <p class="text-orange-400">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p>" Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community"</p>
+          <div>
+            <img class="w-14" src="logo/WhatsApp Image 2024-02-22 at 6.07.48 PM.jpeg" alt="">
+          </div>
+          <div>
+            <p>Dennis Kinyua</p>
+            <p>Founder @ Casavera Lounge</p>
+          </div>
+        </div>
+      </div>
+      <div class="arrows"></div>
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
