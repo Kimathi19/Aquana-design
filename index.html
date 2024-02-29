@@ -246,11 +246,11 @@
         <p class="text-2xl font-bold mb-4">What our Clients Say</p>
         <p class="w-[50%] text-center text-neutral-500">There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form.</p>
       </div>
-      <div class="testimonials flex flex-row gap-4">
+      <div class="testimonials flex flex-row gap-4 flex-wrap lg:flex-nowrap">
         <!-- 1st card -->
-        <div class=" w-[450px] shadow-xl bg-card p-3">
+        <div class="w-[450px] shadow-xl bg-white rounded-lg p-3" data-aos="zoom-in-right" data-aos-duration="1000">
           <p class="text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-          <p class="my-3 mb-6 text-sm">" Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community"</p>
+          <p class="my-3 mb-6 text-sm">" I'm committed to eco-friendly choices, and Aquna's commitment to sustainable practices is a big reason I chose them. Their services are great, and I know I'm making a responsible decision. "</p>
           <div class="flex gap-2 items-center">
             <div>
               <img class="w-12 h-12 object-cover rounded-full" src="logo/WhatsApp Image 2024-02-22 at 6.04.43 PM.jpeg" alt="">
@@ -261,10 +261,11 @@
             </div>
           </div>
         </div>
+
         <!-- 2nd card -->
-        <div class=" w-[450px] shadow-xl bg-card p-3">
+        <div class=" w-[450px] shadow-xl bg-white rounded-lg p-3" data-aos="zoom-in" data-aos-duration="1000">
           <p class="text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-          <p class="my-3 mb-6 text-sm">" Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community"</p>
+          <p class="my-3 mb-6 text-sm">" Having Aquana's purified water delivered right to our doorstep is a lifesaver. It's refreshing, affordable, and saves us valuable time. "</p>
           <div class="flex gap-2 items-center">
             <div>
               <img class="w-12 h-12 object-cover rounded-full" src="logo/_MG_0043.JPG" alt="">
@@ -276,9 +277,9 @@
           </div>
         </div>
         <!-- 3rd card -->
-        <div class=" w-[450px] shadow-xl bg-card p-3">
+        <div class=" w-[450px] shadow-xl p-3 rounded-lg bg-white" data-aos="zoom-in-left" data-aos-duration="1000">
           <p class="text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-          <p class=" my-3 mb-6 text-sm">" Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community"</p>
+          <p class=" my-3 mb-6 text-sm">" Since switching to Aquana's water delivery, I've noticed a clear difference in taste and quality. Their reliable service and convenient scheduling make staying hydrated effortless!"</p>
           <div class="flex gap-2 items-center">
             <div>
              <img class="w-12 h-12 object-cover rounded-full" src="logo/WhatsApp Image 2024-02-22 at 6.07.48 PM.jpeg" alt="">
@@ -293,26 +294,29 @@
       <div class="arrows"></div>
     </div>
     <!-- Form part-->
-    <div class=" px-24 mb-40 mt-20 h-full flex w-full justify-evenly gap-10">
+    <div class=" px-24 mb-10 mt-20 h-full flex w-full justify-evenly gap-10">
       <!-- left part of form -->
       <div class="words w-[40%] mt-32 mb-8">
         <p class="text-blue-700 font-semibold text-3xl mb-3 ">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
         <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam amet at, dolorem id sed est vero a sequi blanditiis aperiam. Facilis recusandae vero sit totam!</p>
       </div>
+      <!-- FORM -->
       <div class="form ">
-        <form action="" method="post" class=" border px-8 shadow-xl bg-card rounded-md mt-6 w-96">
-          <fieldset class="flex flex-col">
+        <form action="" method="post" class=" border px-8 shadow-xl rounded-md mt-6 w-96 bg-white">
+          <fieldset class="flex flex-col gap-1">
+            <p class="text-center my-2 font-semibold text-blue-700 underline">GET IN TOUCH</p>
             <label class="mt-3 mb-2" for="full-name">Enter your full name: <br>
-              <input class="border mt-1 px-14 py-1" type="text" name="full-name" id="name" placeholder="Full name">
+              <input class="border mt-1 w-full px-2 py-2 outline-orange-400 rounded-md" type="text" name="full-name" id="name" placeholder="Full name" required autofocus>
             </label>
             <label class="mb-2" for="email">Enter your email address: <br>
-              <input class="border  mt-1 px-14 py-1" type="email" name="email" id="email" placeholder="Email Address">
+              <input class="border  mt-1 w-full px-2 py-2 outline-orange-400 rounded-md" type="email" name="email" id="email" placeholder="Email Address">
             </label>
             <label class="mb-2" for="number">Enter your phone number: <br>
-              <input class="border  mt-1 px-14 py-1" type="number" name="telephone" id="phone" placeholder="Phone Number">
+              <input class="border  mt-1 w-full px-2 py-2 outline-orange-400 rounded-md" type="number" name="telephone" id="phone" placeholder="Phone Number">
             </label>
             <label class="mb-2" for="message">Leave a message: <br>
-              <input class="border px-14 py-4" type="text" name="message" id="message" placeholder="Message">
+              <!-- <input class="border px-14 py-4" type="text" name="message" id="message" placeholder="Message"> -->
+              <textarea name="message" id="textarea" cols="30" rows="5" class="border w-full p-2 outline-orange-400" placeholder="Message"></textarea>
             </label>
             <label for="terms-and-conditions">
               <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a class="text-blue-700 " href="#">terms and conditions</a>
@@ -322,14 +326,16 @@
         </form>
       </div>
     </div>
+
+
     <!-- Footer -->
     <div class="footer px-24  flex justify-between mb-3">
       <div class="copyright flex gap-3 ">
-        <p class="text-sm font-semibold">&copy; 2024 Aquana</p>
-        <p class="text-sm font-semibold">All rights reserved</p>
+        <p class="text-sm font-semibold text-blue-700">&copy; 2024 Aquana</p>
+        <p class="text-sm font-semibold text-blue-700">All rights reserved</p>
       </div>
       <div class="creation">
-        <p class="text-sm font-semibold">A Kimathi Creation</p>
+        <p class="text-sm font-semibold text-blue-700">A Kimathi Creation</p>
       </div>
     </div>
 
