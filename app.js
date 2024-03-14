@@ -10,8 +10,8 @@ class Header extends HTMLElement{
       </div>
       <div class="nav-links hidden lg:block">
         <ul class="flex w-96 justify-between items-center">
-          <li class="hover:underline"><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
+          <li class="hover:underline"><a href="index.html">Home</a></li>
+          <li class="hover:underline"><a href="about.html">About Us</a></li>
           <li><a href="#">Blog</a></li>
           <li
             class="bg-orange-500 text-white py-1 px-4 rounded-md font-semibold"
