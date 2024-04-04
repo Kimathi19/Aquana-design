@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/ce6898a04b.js" crossorigin="anonymous"></script>
   </head>
 
-  <body class="text-sm">
+  <body class="max-w-[100%] overflow-x-hidden">
     <!-- nav bar -->
     <main-header></main-header>
 
@@ -81,7 +82,7 @@
     <!-- why choose us -->
 
     <div
-      class="px-8 flex justify-between w-full flex-col-reverse gap-10 lg:mb-40 lg:flex-row lg:px-24"
+      class="px-8 flex justify-between w-full flex-col-reverse gap-10 lg:mb-40 mb-16 lg:flex-row lg:px-24"
     >
       <div class="left-side flex items-center gap-1" data-aos="fade-right" data-aos-duration="1000">
         <div class="flex flex-col gap-1">
@@ -128,25 +129,25 @@
     </div>
 
     <!--What we offer-->
-    <div class="px-24 lg:mb-40">
-      <div class="top w-[50%] mb-14">
+    <div class="lg:px-24 px-4 lg:mb-40">
+      <div class="top lg:w-[50%] mb-14">
         <p class="text-blue-700 font-semibold mb-1 uppercase text-[12px] tracking-wider">What we offer</p>
         <p class="text-3xl font-bold mb-2">Our Best Services</p>
         <p class="text-sm ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur accusantium, voluptatibus doloribus repudiandae suscipit corrupti. A vel cumque porro nesciunt?</p>
       </div>
-      <div class="bottom flex flex-row justify-between gap-16 ">
+      <div class="bottom flex flex-col lg:flex-row  justify-center lg:justify-between gap-16 ">
 
         <!-- first card-->
-        <div class="w-[450px]" >
-        <img  src="logo/online-delivery-service-conceptp.png" alt="Online water delivery" class="h-[200px] w-full rounded-md">
+        <div class="md:w-[450px]" >
+        <img class="object-cover"  src="logo/online-delivery-service-conceptp.png" alt="Online water delivery" class="h-[200px] w-full rounded-md">
         <h3 class="text-orange-400 font-semibold text-xl mb-2">Fast Delivery</h3>
         <p class="text-sm ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, nulla.</p>
         <p class="text-sm text-neutral-400 mt-3 ">Learn more</p>
         </div>
 
       <!-- second card -->
-        <div class="w-[450px]">
-          <img src="logo/water-bottle-water-drink-liquid.png" alt="bottled water" class="h-[200px] object-contain w-full border-2 rounded-md border-orange-400 ">
+        <div class="md:w-[450px]">
+          <img class="object-cover" src="logo/water-bottle-water-drink-liquid.png" alt="bottled water" class="h-[200px] object-contain w-full border-2 rounded-md border-orange-400 ">
           <h3 class="text-orange-400 font-semibold text-xl mb-2">Custom Products</h3>
           <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, hic!</p>
           <p class="text-sm text-gray-500 mt-3">Learn more</p>
@@ -154,8 +155,8 @@
 
         
         <!-- third card -->
-        <div class="w-[450px]">
-          <img src="logo/close-up-view-hands-protective-g.png" alt="purified water" class="h-[200px] object-cover rounded-md w-full">
+        <div class="md:w-[450px]">
+          <img class="object-cover" src="logo/close-up-view-hands-protective-g.png" alt="purified water" class="h-[200px] object-cover rounded-md w-full">
           <h3 class="text-orange-400 font-semibold text-xl mb-2">Water Purification</h3>
           <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, suscipit?</p>
           <p class="text-sm text-gray-500 mt-3">Learn more</p>
@@ -249,9 +250,9 @@
       <div class="arrows"></div>
     </div>
     <!-- Form part-->
-    <div class=" px-24 mb-10 mt-20 h-full flex w-full justify-evenly gap-10">
+    <div class=" lg:px-24 px-4 flex-col md:flex-row mb-10 mt-20 h-full flex w-full justify-evenly gap-10">
       <!-- left part of form -->
-      <div class="words w-[40%] mt-32 mb-8">
+      <div class="words md:w-[40%] md:mt-32 mb-8">
         <p class="text-blue-700 font-semibold text-3xl mb-3 ">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
         <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam amet at, dolorem id sed est vero a sequi blanditiis aperiam. Facilis recusandae vero sit totam!</p>
       </div>
@@ -284,15 +285,7 @@
 
 
     <!-- Footer -->
-    <div class="footer px-24  flex justify-between mb-3">
-      <div class="copyright flex gap-3 ">
-        <p class="text-sm font-semibold text-blue-700">&copy; 2024 Aquana</p>
-        <p class="text-sm font-semibold text-blue-700">All rights reserved</p>
-      </div>
-      <div class="creation">
-        <p class="text-sm font-semibold text-blue-700">A Kimathi Creation</p>
-      </div>
-    </div>
+    <main-footer></main-footer>
     
   <!-- scripts -->
     <script src="app.js"></script>

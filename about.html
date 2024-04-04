@@ -10,23 +10,23 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/ce6898a04b.js" crossorigin="anonymous"></script>
 </head>
-<body class="text-sm font">
+<body class="text-sm font max-w-[100%] overflow-x-hidden">
     <!-- nav bar -->
     <main-header></main-header>
 
     <!-- Hero section -->
-    <div class="hero flex px-24 py-16 gap-10">
-        <div class="left w-[45%] my-14">
+    <div class="hero flex flex-col-reverse px-4 lg:flex-row lg:px-24 lg:py-16 lg:gap-10 mt-4">
+        <div class="left lg:w-[45%] my-14">
             <h4 class="text-blue-700 uppercase tracking-wider text-sm font-semibold">HOW IT STARTED</h4>
             <h2 class="text-lg font-semibold  text-black my-2">Our dream is global water purification transformation</h2>
             <p class="text-sm text-neutral-500 my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo dolorum quidem fugiat reiciendis. Neque iste ipsum porro incidunt nulla quasi illo blanditiis soluta ad omnis, aspernatur natus quibusdam libero perferendis in molestiae illum. Ducimus aspernatur possimus nostrum laudantium temporibus minima!</p>
         </div>
-        <div class="right w-[50%]">
-            <img class="rounded-md w-full h-80" src="./logo/close-up-view-hands-protective-g.png" alt="">
+        <div class="right lg:w-[50%]">
+            <img class="rounded-md w-full h-[300px] lg:h-80 object-cover" src="./logo/close-up-view-hands-protective-g.png" alt="">
         </div>
     </div>
     <!-- Reviews -->
-    <div class="flex justify-evenly mb-40 px-24">
+    <div class="flex flex-wrap justify-evenly mb-20 lg:mb-40 lg:px-24">
         <!-- The reviews -->
         <div class="flex items-center justify-center gap-2.5 p-2.5"">
             <div class="font-bold text-blue-700 text-lg">
@@ -66,7 +66,7 @@
     </div>
 
     <!-- Mission and vision -->
-  <div class="flex px-24 justify-evenly gap-24 mb-40">
+  <div class="flex flex-col md:flex-row md:gap-4 px-4 lg:px-24 items-center mx-auto justify-evenly gap-10 lg:gap-24 mb-40">
      <!-- Mission -->
       <div class="shadow-xl p-10 ">
           <h5 class="text-sm text-orange-400 font-semibold tracking-wider mb-2">OUR MISSION</h5>
@@ -81,20 +81,20 @@
       </div>
   </div>
   <!-- Values -->
-  <div class="px-24 mb-40 ">
+  <div class="lg:px-24 px-4 lg:mb-40 mb-12 ">
        <div class="items-center flex  flex-col  justify-center ">
          <h5 class="text-blue-700 font-semibold uppercase tracking-wider mb-3">OUR VALUES</h5>
-         <h2 class="text-2xl font-semibold">The Fundamental Principles Guiding <br> <center> Our Company </center></h2>
+         <h2 class="text-2xl font-semibold text-center lg:w-[55%]">The Fundamental Principles Guiding Our Company</h2>
        </div>
       <div class="flex justify-evenly gap-10">
-        <div class="left w-[50%] py-16 values">
+        <div class="left md:w-[50%] py-16 values">
             <div class="execution flex gap-2 mb-6">
                 <div>
                  <i class="fa-solid fa-gears text-lg "></i>
                 </div>
                 <div class="top-0">
                  <h1 class="font-bold text-orange-400 text-lg">Execution</h1>
-                 <p class="text-sm text-neutral-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, amet, itaque quod modi ab, ipsum a tempore nisi delectus minus iure laboriosam eius libero qui corporis odit? Quisquam alias minus a voluptates, rem voluptatem debitis!</p>
+                 <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, amet, itaque quod modi ab, ipsum a tempore nisi delectus minus iure laboriosam eius libero qui corporis odit? Quisquam alias minus a voluptates, rem voluptatem debitis!</p>
                 </div>
             </div>
             <div class="accountability flex gap-2 mb-6">
@@ -103,7 +103,7 @@
                 </div>
                 <div>
                     <h1 class="font-bold text-orange-400 text-lg">Accountability</h1>
-                    <p class="text-sm text-neutral-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. At inventore quia nesciunt placeat itaque voluptas ab nemo minus officia maiores, distinctio, impedit illum atque cum optio voluptatibus voluptatum? Nobis, iusto dolorum atque cumque aliquam dolore.</p> 
+                    <p class="text-sm ">Lorem ipsum dolor sit amet consectetur adipisicing elit. At inventore quia nesciunt placeat itaque voluptas ab nemo minus officia maiores, distinctio, impedit illum atque cum optio voluptatibus voluptatum? Nobis, iusto dolorum atque cumque aliquam dolore.</p> 
                 </div>
 
             </div>
@@ -113,65 +113,19 @@
                 </div>
                 <div>
                     <h1 class="font-bold text-orange-400 text-lg">Results</h1>
-                    <p class="text-sm text-neutral-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident officiis voluptatibus tempora? Perspiciatis vitae laboriosam in ullam consequuntur eveniet cumque impedit molestiae, officiis aliquam ipsam doloremque dolor nulla ad provident a aliquid fugiat maiores perferendis.</p>
+                    <p class="text-sm ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident officiis voluptatibus tempora? Perspiciatis vitae laboriosam in ullam consequuntur eveniet cumque impedit molestiae, officiis aliquam ipsam doloremque dolor nulla ad provident a aliquid fugiat maiores perferendis.</p>
                 </div>
 
             </div>
         </div>
-        <div class="right flex justify-center w-[40%] object-cover items-center">
+        <div class="right hidden md:flex justify-center w-[40%] object-cover items-center">
             <img class=" h-[451px] w-[313px] rounded-md" src="./logo/black-woman-exercise-bike-drinki.png" alt="">
         </div>
       </div> 
   </div>
 
   <!-- Footer -->
-  <div class="px-24">
-    <div class="details">
-       <div class="logo flex items-center mb-5">
-         <img class="w-14" src="logo/pngegg-logo.png" alt="Aquana-logo" />
-         <span class="logo-name text-blue-700">Aquana</span>
-       </div>
-       <div class="email flex gap-3 mb-5 items-center">
-            <i class="fa-solid fa-envelope mt-1 border p-2 rounded-md bg-neutral-200"></i>
-            <div>
-              <p class="font-bold">Email Address</p>
-              <p class="text-neutral-500 text-sm ">
-                info@aquana@gmail.com
-              </p>
-            </div>
-        </div>
-        <div class="location flex gap-3 mb-5 items-center">
-            <i class="fa-solid fa-location-dot mt-1 border p-2 rounded-md bg-neutral-200"></i>
-            <div>
-              <p class="font-bold">Our Location</p>
-              <p class="text-neutral-500 text-sm ">
-                106 Mbagathi Road Nairobi
-              </p>
-            </div>
-          </div>
-         <div class="email flex gap-3 mb-5 items-center">
-            <i class="fa-solid fa-phone-volume  mt-1 border p-2 rounded-md bg-neutral-200"></i>
-            <div>
-              <p class="font-bold">Phone Number</p>
-              <p class="text-neutral-500 text-sm ">
-                (+254)-112-598-055
-              </p>
-            </div>
-          </div> 
-          <div class="email flex gap-3 mb-5 items-center">
-            <div class="email flex gap-3 mb-14 items-center ">
-                <i class="fa-solid fa-globe mt-1 border p-2 rounded-md bg-neutral-200"></i>
-            <div>
-              <p class="font-bold">Our website</p>
-              <p class="text-neutral-500 text-sm ">
-                aquana-web.vercel.app
-              </p>
-            </div>
-          </div> 
-           
-       
-
-    </div>  
+  <main-footer></main-footer>
      <!-- scripts -->
     <script src="app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

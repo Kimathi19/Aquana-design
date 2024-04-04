@@ -55,3 +55,94 @@ class Header extends HTMLElement{
 }
 
 customElements.define("main-header",Header)
+class Footer extends   HTMLElement{
+  connectedCallback(){
+    this.innerHTML = `
+     <div class="footer">
+  <div class="lg:px-24 px-4 flex-wrap flex justify-between">
+    <div class="details">
+       <div class="logo flex items-center mb-5">
+         <img class="w-14" src="logo/pngegg-logo.png" alt="Aquana-logo" />
+         <span class="logo-name text-blue-700">Aquana</span>
+       </div>
+       <div class="email flex gap-3 mb-5 items-center">
+            <i class="fa-solid fa-envelope mt-1 border p-2 rounded-md bg-neutral-200"></i>
+            <div>
+              <p class="font-bold">Email Address</p>
+              <p class="text-neutral-500 text-sm ">
+                info@aquana@gmail.com
+              </p>
+            </div>
+        </div>
+        <div class="location flex gap-3 mb-5 items-center">
+            <i class="fa-solid fa-location-dot mt-1 border p-2 rounded-md bg-neutral-200"></i>
+            <div>
+              <p class="font-bold">Our Location</p>
+              <p class="text-neutral-500 text-sm ">
+                106 Mbagathi Road Nairobi
+              </p>
+            </div>
+          </div>
+         <div class="phone flex gap-3 mb-5 items-center">
+            <i class="fa-solid fa-phone-volume  mt-1 border p-2 rounded-md bg-neutral-200"></i>
+            <div>
+              <p class="font-bold">Phone Number</p>
+              <p class="text-neutral-500 text-sm ">
+                (+254)-112-598-055
+              </p>
+            </div>
+          </div> 
+          <div class="website flex gap-3 mb-5 items-center">
+            <div class="email flex gap-3  items-center ">
+                <i class="fa-solid fa-globe mt-1 border p-2 rounded-md bg-neutral-200"></i>
+            <div>
+              <p class="font-bold">Our website</p>
+              <p class="text-neutral-500 text-sm ">
+                aquana-web.vercel.app
+              </p>
+            </div>
+          </div> 
+          </div>
+          </div>
+          <div class="company mt-6 ">
+            <h2 class="font-bold text-blue-700 tracking-wider uppercase mb-4">Company</h2>
+            <p class="mb-1">About Aquana</p>
+            <p class="mb-1">Contacts and Support</p>
+            <p class="mb-1">Success History</p>
+            <p class="mb-1">Settings and Privacy</p>
+          </div>
+          <div class="links mt-6">
+            <h2 class="font-bold text-blue-700 tracking-wider uppercase mb-4">Useful Links</h2>
+            <p class="mb-1">Promo</p>
+            <p class="mb-1">Custom Work</p>
+            <p class="mb-1">Warehouse</p>
+            <p class="mb-1">Support</p>
+            <p class="mb-1">Track my Order</p>
+            <p class="mb-1">Privacy Policy</p>
+          </div>
+          <div class="social-media mt-6">
+            <h2 class="font-bold text-blue-700 tracking-wider uppercase mb-4">Follow Us On</h2>
+            <div class="handles flex gap-4 mb-5 ">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            &copy; Aquana 2024
+          </div> 
+          </div>
+
+          <div class="creation lg:px-24 px-4 bg-blue-900   flex flex-col-reverse items-center md:flex-row justify-between py-2">
+      <div class="copyright flex gap-3 ">
+        <p class="text-sm font-semibold text-white">&copy; 2024 Aquana</p>
+        <p class="text-sm font-semibold text-white ">All rights reserved</p>
+      </div>
+      <div class="creation">
+        <p class="text-sm font-semibold text-white">A Kimathi Creation</p>
+      </div>
+    </div>
+    </div>
+    `;
+  }
+}
+customElements.define("main-footer", Footer);
