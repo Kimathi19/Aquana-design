@@ -79,7 +79,7 @@ class Footer extends   HTMLElement{
             <div>
               <p class="font-bold">Our Location</p>
               <p class="text-neutral-500 text-sm ">
-                106 Mbagathi Road Nairobi
+                106 Kirinyaga Road Kitengela
               </p>
             </div>
           </div>
@@ -138,7 +138,7 @@ class Footer extends   HTMLElement{
         <p class="text-sm font-semibold text-white ">All rights reserved</p>
       </div>
       <div class="creation">
-        <p class="text-sm font-semibold text-white">A Kimathi Creation</p>
+        <p class="text-sm font-semibold text-white"> <a target="_blank" href="https://github.com/Kimathi19">A Kimathi Creation</a> </p>
       </div>
     </div>
     </div>

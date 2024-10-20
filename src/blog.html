@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="container p-4">
+   <select name="filter-options" id="" class="border mb-2">
+    <option value="filter" class="" >Filter</option>
+    <option value="price" class="">Price</option>
+    <option value="type" class="">Vehicle Type</option>
+   </select>
+
+    <div class="card-wrapper flex items-center justify-start flex-wrap gap-2">
+ 
+    </div>
+
+
+
+
+    <script>
+        // const card = document.querySelector('.card');
+        const cardWrapper = document.querySelector('.card-wrapper');
+
+       const image = document.querySelector('.image');
+       const title = document.querySelector('.title');
+       const description = document.querySelector('.description');
+       const price = document.querySelector('.price');
+
+        const carCollection=[
+             {
+          id: 1,
+          src: "https://img.freepik.com/free-photo/white-offroader-jeep-parking_114579-4007.jpg",
+          name: "Jeep",
+          description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum ad reprehenderit possimus.",
+          price: "2.5 million",
+          priceValue: 2.5, // Numeric price for filtering purposes
+        },
+        {
+          id: 2,
+          src: "https://img.freepik.com/free-photo/selective-focus-shot-red-porsche-car-parked-near-buildings-blurry-background_181624-1778.jpg",
+          name: "Datsun",
+          description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum ad reprehenderit possimus.",
+          price: "3.2 million",
+          priceValue: 3.2,
+        },
+        {
+          id: 3,
+          src: "https://img.freepik.com/free-photo/white-coupe-sport-car-standing-road-front-view_114579-4005.jpg",
+          name: "Aston Martin",
+          description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum ad reprehenderit possimus.",
+          price: "4 million",
+          priceValue: 4,
+        },
+        {
+          id: 4,
+          src: "https://img.freepik.com/free-photo/yellow-car-gas-station_23-2150697544.jpg",
+          name: "BMW M4",
+          description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum ad reprehenderit possimus.",
+          price: "3.5 million",
+          priceValue: 3.5,
+        },
+        {
+          id: 5,
+          src: "https://img.freepik.com/free-photo/low-angle-white-modern-car-outdoors_23-2149385730.jpg",
+          name: "Ford Raptor",
+          description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum ad reprehenderit possimus.",
+          price: "2.9 million",
+          priceValue: 2.9,
+        },
+        ]
+       
+         carCollection.forEach((car) => {
+        const card = `
+          <div class="card p-1 w-[300px] space-y-2 rounded-lg shadow-md">
+            <img
+              src="${car.src}"
+              alt="product-photo"
+              class="w-[300px] rounded-md image"
+            />
+            <h1 class="title font-bold">${car.name}</h1>
+            <p class="description text-neutral-500 text-sm">${car.description}</p>
+            <p class="price font-bold">${car.price}</p>
+          </div>
+        `;
+
+        cardWrapper.innerHTML += card;
+      });
+
+
+       
+
+    </script>
+  </body>
+</html>
